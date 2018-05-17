@@ -1,0 +1,5 @@
+grant {
+  // needed by gson to deserialize
+  permission java.lang.RuntimePermission "accessDeclaredMembers";
+  permission java.lang.reflect.ReflectPermission "suppressAccessChecks";
+};
