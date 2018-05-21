@@ -42,7 +42,24 @@ Todo: document more in detail
 
 Compiling is required if your version of ElasticSearch is different from the one this plugin is released for. This is a requirement of ElasticSearch to account for API changes.
 
-To compile, simply install Maven and run `mvn install`. It will compile and package the plugin in `target/releases/elasticsearch-yara-0.0.1.zip`; copy it somewhere and proceed to installation.
+Compilation happens in two steps, compiling Yara and compiling the plugin.
+
+Start with cloning the submodules, if you haven't already:
+
+    git submodule update --init
+
+Compile Yara:
+
+    cd yara
+    ./bootstrap.sh
+    ./configure --with-pic
+    cd ..
+
+Install Maven and compile the plugin:
+
+    mvn install
+
+It will compile and package the plugin in `target/releases/elasticsearch-yara-0.0.1.zip`; copy it somewhere and proceed to installation.
 
 ## Thanks
 

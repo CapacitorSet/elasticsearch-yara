@@ -14,6 +14,12 @@
         <elasticsearch.version>6.2.4</elasticsearch.version>
     </properties>
 
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>yara-java</module>
+    </modules>
+
     <dependencies>
         <dependency>
             <groupId>org.elasticsearch</groupId>
