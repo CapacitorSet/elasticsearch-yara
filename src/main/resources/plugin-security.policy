@@ -2,4 +2,8 @@ grant {
   // needed by gson to deserialize
   permission java.lang.RuntimePermission "accessDeclaredMembers";
   permission java.lang.reflect.ReflectPermission "suppressAccessChecks";
+
+  // needed to execute Yara. Note that giving the "execute" permission on "/usr/bin/yara" won't work, because of Runtime.exec
+  permission java.io.FilePermission "<<ALL FILES>>", "execute";
+  permission java.io.FilePermission "/tmp", "write";
 };

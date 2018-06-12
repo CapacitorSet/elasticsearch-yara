@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.capacitorset</groupId>
-    <artifactId>elasticsearch-yara</artifactId>
+    <artifactId>yara-search</artifactId>
     <version>0.0.1</version>
     <name>Yara scripting</name>
     <description>Implements Yara matching in ElasticSearch</description>
@@ -13,12 +13,6 @@
     <properties>
         <elasticsearch.version>6.2.4</elasticsearch.version>
     </properties>
-
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>yara-java</module>
-    </modules>
 
     <dependencies>
         <dependency>

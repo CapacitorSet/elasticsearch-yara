@@ -1,6 +1,0 @@
-[submodule "yara-java"]
-	path = yara-java
-	url = https://github.com/CapacitorSet/yara-java
-[submodule "yara"]
-	path = yara
-	url = https://github.com/VirusTotal/yara
